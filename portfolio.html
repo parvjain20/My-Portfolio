@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: rgb(16, 14, 29);
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        
+        
+        .box50 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px 35px;
+            gap: 20px;
+        }
+        
+        .box11 {
+            color: rgb(189, 138, 255);
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+        
+        .box12 {
+            font-style: oblique;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: rgb(213, 203, 229);
+        }
+        
+        .box14 {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        
+        .box14 span {
+            color: rgb(230, 222, 240);
+           
+        }
+        
+        .box14  {
+            color: rgb(189, 138, 255);
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid rgb(64, 51, 79);
+        }
+        
+        
+        
+        .box1 {
+            margin: 30px 35px;
+            padding: 25px;
+            min-height: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 25px;
+            border-radius: 12px;
+            background-color: rgb(33, 26, 50);
+        }
+        
+        .box2 {
+            flex: 1.2;
+            padding: 10px;
+            min-width: 0;
+            background-color: rgb(33, 26, 50);
+        }
+        
+        .box15 {
+            display: inline-block;
+            color: rgb(189, 138, 255);
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+        
+        .box16 {
+            font-size: clamp(28px, 3vw, 42px);
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+        
+        .box17 {
+            font-size: clamp(27px, 3vw, 40px);
+            line-height: 1.2;
+            color: rgb(189, 138, 255);
+            margin-bottom: 25px;
+        }
+        
+        .box18,
+        .box19 {
+            display: inline-block;
+            padding: 11px 17px;
+            margin-right: 8px;
+            border-radius: 6px;
+            font-size: 14px;
+            
+        }
+        
+        .box18 {
+            background-color: rgb(189, 138, 255);
+            color: rgb(16, 14, 29);
+        }
+        
+        .box19 {
+            border: 1px solid rgb(117, 101, 141);
+            color: white;
+        }
+        
+        .box18 {
+            background-color: rgb(255, 152, 127);
+            transform: translateY(-3px);
+        }
+        
+        .box19 {
+            border-color: rgb(189, 138, 255);
+            color: rgb(189, 138, 255);
+        }
+        
+        
+        
+        .box3 {
+            flex: 0.8;
+            min-width: 0;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: rgb(48, 35, 63);
+        }
+        
+        .box20 {
+            color: rgb(255, 152, 127);
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+        
+        .box21 {
+            font-size: 27px;
+            line-height: 1.3;
+            margin-bottom: 10px;
+        }
+        
+        .box22 {
+            color: rgb(213, 203, 229);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .box23,
+        .box24 {
+            display: inline-block;
+            width: 65px;
+            padding: 7px 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .box23 {
+            background-color: rgb(189, 138, 255);
+            color: rgb(16, 14, 29);
+            margin-right: 7px;
+        }
+        
+        .box24 {
+            background-color: rgb(255, 152, 127);
+            color: rgb(16, 14, 29);
+        }
+        
+        
+        
+        .box4 {
+            background-color: rgb(189, 138, 255);
+            color: rgb(16, 14, 29);
+            text-align: center;
+            padding: 17px 12px;
+            margin: 30px 0;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        
+        
+        .box25,
+        .box29,
+        .box32 {
+            color: rgb(255, 152, 127);
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            margin: 45px 35px 12px;
+        }
+        
+        
+        
+        .box6 {
+            margin: 15px 35px 30px;
+            padding: 30px;
+            border-radius: 12px;
+            background-color: rgb(33, 26, 50);
+        }
+        
+        .box26 {
+            color: white;
+            font-size: clamp(25px, 3vw, 34px);
+            margin-bottom: 15px;
+        }
+        
+        .box27 {
+            max-width: 850px;
+            color: rgb(213, 203, 229);
+            font-size: 15px;
+            line-height: 1.9;
+            margin-bottom: 22px;
+        }
+        
+        
+        
+        .box7,
+        .box8 {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(50% - 10px);
+            min-height: 115px;
+            padding: 20px;
+            margin-top: 8px;
+            border: 1px solid rgb(64, 51, 79);
+            border-radius: 9px;
+            background-color: rgb(48, 35, 63);
+            transition: 0.3s;
+        }
+        
+        .box7 {
+            margin-right: 10px;
+        }
+        
+        .box7,
+        .box8 {
+            border-color: rgb(189, 138, 255);
+            transform: translateY(-3px);
+        }
+        
+        .box7 h1,
+        .box8 h1 {
+            color: rgb(189, 138, 255);
+            font-size: 21px;
+            margin-bottom: 7px;
+        }
+        
+        .box8 h1 {
+            color: rgb(255, 152, 127);
+        }
+        
+        .box7 p,
+        .box8 p {
+            color: rgb(213, 203, 229);
+            font-size: 14px;
+        }
+        
+        
+        
+        .box28 {
+            margin-top: 25px;
+        }
+        
+        .box28 h1 {
+            color: rgb(255, 152, 127);
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            margin: 45px 35px 12px;
+        }
+        
+        .box28 p {
+            font-size: 29px;
+            font-weight: bold;
+            margin: 0 35px 20px;
+        }
+        
+        .box9 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 20px 35px 35px;
+        }
+        
+        .box9 > div {
+            flex: 1 1 200px;
+            min-width: 0;
+            padding: 23px;
+            border-radius: 10px;
+            border: 1px solid rgb(64, 51, 79);
+            background-color: rgb(33, 26, 50);
+            
+        }
+        
+        .box9 > div {
+            transform: translateY(-5px);
+            border-color: rgb(189, 138, 255);
+            background-color: rgb(40, 31, 59);
+        }
+        
+        .box9 h1 {
+            color: rgb(189, 138, 255);
+            font-size: 23px;
+            margin-bottom: 8px;
+        }
+        
+        .box9 > div:nth-child(even) h1 {
+            color: rgb(255, 152, 127);
+        }
+        
+        .box9 p {
+            color: rgb(213, 203, 229);
+            font-size: 14px;
+        }
+        
+        
+        
+        .box29 {
+            margin-top: 45px;
+        }
+        
+        .box30 {
+            font-size: 29px;
+            font-weight: bold;
+            margin: 0 35px 25px;
+        }
+        
+        .box31 {
+            display: block;
+            margin: 20px 55px 35px;
+        }
+        
+        .box31 ul {
+            list-style: none;
+            border-left: 2px solid rgb(64, 51, 79);
+            padding-left: 25px;
+        }
+        
+        .box31 li {
+            position: relative;
+            margin-bottom: 30px;
+            padding: 5px 0 5px 10px;
+        }
+        
+        .box31 li::before {
+            content: "";
+            position: absolute;
+            left: -33px;
+            top: 12px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: rgb(189, 138, 255);
+            border: 3px solid rgb(16, 14, 29);
+        }
+        
+        .box31 li:nth-child(even)::before {
+            background-color: rgb(255, 152, 127);
+        }
+        
+        .box31 h1 {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 7px;
+        }
+        
+        .box31 p {
+            color: rgb(213, 203, 229);
+            font-size: 14px;
+        }
+        
+        
+        
+        .box32 {
+            margin-top: 45px;
+        }
+        
+        .box33 {
+            font-size: clamp(25px, 3vw, 34px);
+            margin: 0 35px 15px;
+        }
+        
+        .box34 {
+            max-width: 750px;
+            color: rgb(213, 203, 229);
+            line-height: 1.8;
+            font-size: 15px;
+            margin: 0 35px 22px;
+        }
+        
+        .box35 {
+            display: inline-block;
+            background-color: rgb(189, 138, 255);
+            color: rgb(16, 14, 29);
+            font-weight: bold;
+            padding: 12px 22px;
+            margin: 0 35px 40px;
+            border-radius: 7px;
+           
+        }
+        
+        .box35 {
+            background-color: rgb(255, 152, 127);
+            transform: translateY(-3px);
+        }
+        
+        
+        
+        .box36 {
+            color: rgb(189, 138, 255);
+            font-size: 25px;
+            margin: 20px 35px 5px;
+        }
+        
+        .box37 {
+            color: rgb(169, 155, 190);
+            font-size: 13px;
+            margin: 0 35px 25px;
+        }
+        
+        
+        
+        @media (max-width: 750px) {
+            .box50 {
+                padding: 18px;
+            }
+        
+            .box14 {
+                gap: 12px;
+                font-size: 13px;
+            }
+        
+            .box1 {
+                margin: 18px;
+                padding: 18px;
+                flex-direction: column;
+            }
+        
+            .box2,
+            .box3 {
+                width: 100%;
+                flex: auto;
+            }
+        
+            .box3 {
+                min-height: 220px;
+            }
+        
+            .box6 {
+                margin: 15px 18px;
+                padding: 20px;
+            }
+        
+            .box25,
+            .box29,
+            .box32 {
+                margin-left: 18px;
+                margin-right: 18px;
+            }
+        
+            .box28 h1 {
+                margin-left: 18px;
+                margin-right: 18px;
+            }
+        
+            .box28 p,
+            .box30 {
+                margin-left: 18px;
+                margin-right: 18px;
+            }
+        
+            .box9 {
+                margin-left: 18px;
+                margin-right: 18px;
+            }
+        
+            .box31 {
+                margin-left: 35px;
+                margin-right: 18px;
+            }
+        
+            .box33,
+            .box34 {
+                margin-left: 18px;
+                margin-right: 18px;
+            }
+        
+            .box35 {
+                margin-left: 18px;
+            }
+        
+            .box36,
+            .box37 {
+                margin-left: 18px;
+                margin-right: 18px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .box50 {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        
+            .box14 {
+                flex-wrap: wrap;
+            }
+        
+            .box16,
+            .box17 {
+                font-size: 28px;
+            }
+        
+            .box7,
+            .box8 {
+                display: block;
+                width: 100%;
+                margin-right: 0;
+            }
+        
+            .box4 {
+                font-size: 10px;
+                letter-spacing: 0.5px;
+            }
+        
+            .box31 h1 {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+
+
+    </style>
+</head>
+
+<body>
+    
+   <div class="box50">
+    
+    <div>
+        <h2 class="box11">PARV</h2>
+        <p class="box12">STUDENT.CREATOR.LEARNER</p>
+    </div>
+    
+    
+    <div class="box14">
+        <span>Home</span>
+        <span>About</span>
+        <span>Contact</span>
+    </div>
+</div>
+
+    <hr>
+    <div class="box1">
+        <div class="box2">
+            <p class="box15">WELCOME TO MY SPACE</p>
+            <h1 class="box16">Hey, I'm Parv.</h1>
+            <h1 class="box17">I love building things.</h1>
+            <p class="box18">View Projects </p>
+            <p class="box19">Know Me</p>
+        </div>
+        <div class="box3">
+            <h1 class="box20">CURRENT FOCUS</h1>
+            <h1 class="box21">Learning by doing.</h1>
+            <p class="box22">One concept, one project, one step at a time.</p>
+            <p class="box23">HTML</p>
+            <p class="box24">CSS</p>
+        </div>
+
+    </div>
+    <div class="box4">
+        CURIOUS BY NATURE · CREATIVE BY CHOICE · ALWAYS LEARNING
+    </div>
+    <p class="box25">01 / ABOUT ME</p>
+    <div class="box6">
+        <h1 class="box26">A little about my journey.</h1>
+        <p class="box27">I'm a computer science student interested in technology, design, and problem-solving. I'm
+            building my skills step by step and enjoying the process of learning how websites and programs work</p>
+        <div class="box7">
+            <h1>Coding</h1>
+            <p>Practising C++ and problem-solving.</p>
+        </div>
+        <div class="box8">
+            <h1>Creativity</h1>
+            <p>Exploring colours, layouts and design.</p>
+        </div>
+    <div class="box28">
+    <h1>03 / MY TOOLKIT</h1>
+    <p>Skills I'm developing.</p>
+</div>
+    <div class="box9">
+        <div>
+            <h1>HTML</h1>
+            <p>Building page structure</p>
+        </div>
+        <div>
+            <h1>C++</h1>
+            <p>Programming fundamentals</p>
+        </div>
+        <div>
+            <h1>CSS</h1>
+            <p>Styling and layouts</p>
+        </div>
+        <div>
+            <h1>Problem-solving</h1>
+            <p>Practising DSA</p>
+        </div>
+    </div>
+    <h1 class="box29">04 / WHAT'S NEXT</h1>
+    <p class="box30">My learning roadmap.</p>
+    <list class="box31">
+        <ul>
+            <li>
+                <h1>Build a strong foundation</h1>
+                <p>Practise HTML, CSS, and programming fundamentals</p>
+            </li>
+            <li>
+                <h1>Create more projects</h1>
+                <p>Use what I learn to build useful and attractive websites.</p>
+            </li>
+            <li>
+                <h1>Keep improving</h1>
+                <p>Learn new techniques, solve problems, and improve my designs.</p>
+            </li>
+        </ul>
+    </list>
+    <div>
+        <h1 class="box32">05 / GET IN TOUCH</h1>
+        <h2 class="box33">Have an idea? Let's connect.</h2>
+        <p class="box34">I'm always interested in learning from others, discussing ideas, and exploring new things in
+            technology.</p>
+        <p class="box35">Email Me ↗</p>
+    </div>
+    <hr>
+    <h1 class="box36">PARV</h1>
+    <p class="box37">Roll No-12611082</p>
+</body>
+
+</html>
